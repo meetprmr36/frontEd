@@ -10,7 +10,7 @@ const Service = () => {
                 img="https://demoxml.com/html/restaurant/assets/images/surprise-sec-bg.jpg"
             />
             <div className='Row'>
-                <div className='box'>
+                <div className='Box'>
                     <div className='Snake-box'>
                         <div className='Snake-content'>
                             <img className='Snake-img' src="https://demoxml.com/html/restaurant/assets/images/srv1.png" alt="Snake Icon" />
