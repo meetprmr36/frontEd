@@ -73,8 +73,8 @@ const About = () => {
             Sourcing the freshest local ingredients, using sustainable practices, and innovating with every season — that’s how we ensure quality on every plate.
           </p>
         </motion.div>
-        <motion.img
-          src="/restaurant.jpg"
+        <img
+          src="restaurant.jpg"
           alt="Our Team"
           className="about-img"
           initial={{ x: -50, opacity: 0 }}
