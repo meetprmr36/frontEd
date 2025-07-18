@@ -25,7 +25,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className='box'>
+                <div className='Box'>
                     <div className='Snake-box'>
                         <div className='Snake-content'>
                             <div className='Snake-wrapper'>
@@ -42,7 +42,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className='box'>
+                <div className='Box'>
                     <div className='Snake-box'>
                         <div className='Snake-content'>
                             <img className='Snake-img' src="https://demoxml.com/html/restaurant/assets/images/srv3.png" alt="Snake Icon" />
@@ -57,7 +57,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className='box'>
+                <div className='Box'>
                     <div className='Snake-box'>
                         <div className='Snake-content'>
                             <img className='Snake-img' src="https://demoxml.com/html/restaurant/assets/images/srv4.png" alt="Snake Icon" />
