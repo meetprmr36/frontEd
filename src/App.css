@@ -96,7 +96,6 @@ body {
     width: 100%;
     padding: 0 20px;
     text-align: center;
-    overflow: hidden;
     max-height: 0;
     opacity: 0;
     transform: translateY(-10px);
@@ -405,7 +404,7 @@ body {
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
-    width: min-content; 
+    width: min-content;
     position: relative;
 }
 
@@ -478,7 +477,6 @@ body {
     padding-top: 75px;
     padding-bottom: 55px;
     position: relative;
-    overflow: visible;
 }
 
 .Top-img {
@@ -1397,7 +1395,7 @@ button:hover {
 
     .News-img img {
         width: 93%;
-        margin: 15px;
+        margin: 14px;
     }
 
     .News-Content {
@@ -1616,7 +1614,6 @@ button:hover {
 .container {
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .row {
@@ -2044,6 +2041,7 @@ button:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .about-section.reverse {
@@ -2326,7 +2324,6 @@ button:hover {
     display: flex;
     height: 80vh;
     background-color: transparent;
-    overflow: hidden;
 }
 
 
@@ -2364,7 +2361,7 @@ button:hover {
 }
 
 .vdo-heading {
-    color: #f5b654;
+    color: #c59d5f;
     margin-bottom: 20px;
     font-size: 45px;
     font-family: 'Great Vibes', cursive;
@@ -2401,5 +2398,9 @@ button:hover {
 
     .vdo-para {
         font-size: 17px;
+    }
+
+    .Vdo-componen {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 }

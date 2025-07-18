@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
-import Auth from '../Pages/Auth';
-import Account from '../Pages/Account';
-import { Homepage } from '../Pages/Homepage';
-import About from '../Pages/About';
+import { Link } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
 const Navbar = () => {
@@ -32,15 +27,6 @@ const Navbar = () => {
             </nav>
 
             <ScrollToTop /> 
-
-            <AnimatePresence mode="wait">
-                <Routes>
-                    <Route path='/' element={<Homepage />} />
-                    <Route path='/About' element={<About />} />
-                    <Route path='/Auth' element={<Auth />} />
-                    <Route path='/Account' element={<Account />} />
-                </Routes>
-            </AnimatePresence>
         </div>
     );
 };

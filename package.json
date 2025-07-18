@@ -1,4 +1,5 @@
 {
+  "homepage": "https://meetprmr36.github.io/frontEd",
   "name": "frntapp",
   "version": "0.1.0",
   "private": true,
@@ -17,11 +18,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "vite",
-    "preview": "vite preview",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

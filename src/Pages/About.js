@@ -12,7 +12,7 @@ const About = () => {
     <div className="about-page">
 
       <div className="about-hero">
-        <motion.div
+        <div
           className="hero-text"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ const About = () => {
           <h1>Welcome to SpiceHaus</h1>
           <p>Where flavors meet emotions</p>
           <div className='line-between Line'></div>
-        </motion.div>
+        </div>  
       </div>
 
       <VerticalVideoSlider />
