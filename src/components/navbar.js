@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
+import Homepage from '../Pages/Homepage';
+import About from '../Pages/About';
+import Auth from '../Pages/Auth';
+import Account from '../Pages/Account';
+
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +31,13 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <ScrollToTop /> 
+            <ScrollToTop />
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Auth" element={<Auth />} />
+                <Route path="/Account" element={<Account />} />
+            </Routes>
         </div>
     );
 };

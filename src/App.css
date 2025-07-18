@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+#root {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -102,6 +107,7 @@ body {
     transition: all 0.6s ease;
     flex-direction: column;
     display: flex;
+    pointer-events: none;
 }
 
 .Nav-name.open {
@@ -109,6 +115,7 @@ body {
     opacity: 1;
     transform: translateY(0);
     padding: 20px;
+    pointer-events: auto;
 }
 
 .linked {
@@ -1221,6 +1228,10 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.box {
+    width: 20%;
 }
 
 

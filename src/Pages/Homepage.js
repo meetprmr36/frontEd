@@ -49,4 +49,4 @@ const Homepage = () => {
         </div>
     )
 }
-export { Homepage }
+export default Homepage 

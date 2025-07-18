@@ -21,7 +21,7 @@ const About = () => {
           <h1>Welcome to SpiceHaus</h1>
           <p>Where flavors meet emotions</p>
           <div className='line-between Line'></div>
-        </div>  
+        </div>
       </div>
 
       <VerticalVideoSlider />
@@ -74,7 +74,7 @@ const About = () => {
           </p>
         </motion.div>
         <motion.img
-          src="Resaturant(3).jpg"
+          src="/restaurant.jpg"
           alt="Our Team"
           className="about-img"
           initial={{ x: -50, opacity: 0 }}
@@ -117,9 +117,9 @@ const About = () => {
       <section className="gallery section-padding zoom-in">
         <h2>Inside the Kitchen</h2>
         <div className="image-grid">
-          <img src="/resaturant.jpg" alt="Dining" />
-          <img src="/Inkitchen.jpg" alt="Dining" />
-          <img src="/resaturant(2).jpg" alt="Dining" />
+          <img src="restaurant2.jpg" alt="Dining" />
+          <img src="Inkitchen.jpg" alt="Dining" />
+          <img src="restaurant3.jpg" alt="Dining" />
         </div>
       </section>
 
