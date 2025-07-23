@@ -7,7 +7,7 @@ const Account = () => {
         <div className='Main-cont'>
           <div className="user-card">
             <h1>👤 Username:</h1>
-            <h1>📛 Name:</h1>
+            <h1>🪪 Name:</h1>
             <h1>📧 Email:</h1>
             <h1>📞 Phone:</h1>
           </div>
