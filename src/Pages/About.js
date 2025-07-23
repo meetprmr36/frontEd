@@ -2,6 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import VerticalVideoSlider from '../components/vdoComponent'
+import restaurant2 from '../assets/restaurant2.jpg';
+import inkitchen from '../assets/Inkitchen.jpg';
+import restaurant3 from '../assets/restaurant3.jpg';
+import restaurant from '../assets/restaurant.jpg';
 
 const About = () => {
   const navigate = useNavigate();
@@ -73,8 +77,8 @@ const About = () => {
             Sourcing the freshest local ingredients, using sustainable practices, and innovating with every season — that’s how we ensure quality on every plate.
           </p>
         </motion.div>
-        <img
-          src="restaurant.jpg"
+        <motion.img
+          src={restaurant}
           alt="Our Team"
           className="about-img"
           initial={{ x: -50, opacity: 0 }}
@@ -117,9 +121,9 @@ const About = () => {
       <section className="gallery section-padding zoom-in">
         <h2>Inside the Kitchen</h2>
         <div className="image-grid">
-          <img src="restaurant2.jpg" alt="Dining" />
-          <img src="Inkitchen.jpg" alt="Dining" />
-          <img src="restaurant3.jpg" alt="Dining" />
+          <img src={restaurant2} alt="Dining" />
+          <img src={inkitchen} alt="Dining" />
+          <img src={restaurant3} alt="Dining" />
         </div>
       </section>
 

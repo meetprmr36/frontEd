@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import video1 from '../assets/video1.mp4';
+import video2 from '../assets/video2.mp4';
+import video3 from '../assets/video3.mp4';
+import video4 from '../assets/video4.mp4';
 
-const videos = ["video1.mp4", "video2.mp4", "video3.mp4", "video4.mp4"];
+const videos = [video1, video2, video3, video4];
 
 const content = [
     "Every dish is a tribute to authenticity — carefully crafted by our chefs with premium ingredients and deep-rooted tradition.",
@@ -44,9 +48,11 @@ export default function KitchenSplitSlider() {
 
     return (
         <div className="vdo-Container">
-            {/* Video Section */}
+
             <div className="vdo-holder">
-                <motion.video className="Vdo-component"
+                <motion.video
+                    key={current}
+                    className="Vdo-component"
                     ref={videoRef}
                     muted
                     autoPlay
@@ -58,7 +64,7 @@ export default function KitchenSplitSlider() {
                 />
             </div>
 
-            {/* Text Section */}
+
             <div className="Text-component">
                 <AnimatePresence mode="wait">
                     <motion.div

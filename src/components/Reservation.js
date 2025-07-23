@@ -40,6 +40,8 @@ const Reservation = () => {
                                     type='number'
                                     placeholder='Tables for how much people *'
                                     autoComplete="off"
+                                    min="1"
+                                    max="15"
                                 />
                                 <input
                                     name="date"

@@ -147,20 +147,34 @@ body {
     border-radius: 2px;
     transition: all 0.6s ease;
     transform-origin: center;
+    transition:
+        transform 0.6s ease,
+        opacity 0.4s ease,
+        background-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.hamburger:hover span {
+    background-color: #c59d5f;
+    box-shadow: 0 0 6px rgba(197, 157, 95, 0.6);
 }
 
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 6px);
+    transition-delay: 0.3s, 0s, 0s, 0.3s;
+    /* order: background, shadow, opacity, transform */
 }
 
 
 .hamburger.active span:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
+    transition-delay: 0s, 0s, 0.3s, 0.3s;
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5px, -6px);
+    transition-delay: 0.3s, 0s, 0s, 0.3s;
 }
 
 
@@ -814,7 +828,7 @@ button:hover {
     position: relative;
     color: rgb(200 200 200);
     z-index: 2;
-    font-size: 13px;
+    font-size: 16px;
     width: 550px;
     display: flex;
     justify-content: center;
@@ -884,7 +898,6 @@ button:hover {
     width: 150px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
     height: min-content;
 }
 
@@ -918,7 +931,6 @@ button:hover {
     margin-top: 0px;
     font-size: 26px;
     color: #c59d5f;
-    cursor: pointer;
     transition: all 0.6s ease-in-out 0s;
 }
 
@@ -1088,12 +1100,13 @@ button:hover {
     letter-spacing: 0.7px;
     line-height: 26px;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 
 .THIRD-content td {
     list-style-type: none;
-    padding: 6px 3px;
+    padding: 10px 3px;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
@@ -1536,6 +1549,7 @@ button:hover {
 
     .line-between {
         width: 125px;
+        margin-bottom: 20px;
     }
 
     .bgSecondheadingSec {
@@ -1594,6 +1608,16 @@ button:hover {
     .Loaction {
         margin: 10px;
         margin-left: 0px;
+    }
+
+    .box {
+        width: 40%;
+    }
+
+    .Snake-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -2170,8 +2194,7 @@ button:hover {
 }
 
 .image-grid img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+    transform: scale(1.15);
 }
 
 
@@ -2333,7 +2356,8 @@ button:hover {
 
 .vdo-Container {
     display: flex;
-    height: 80vh;
+    height: auto;
+    min-height: 80vh;
     background-color: transparent;
 }
 
@@ -2353,6 +2377,7 @@ button:hover {
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 0px;
 }
 
 .Text-component {
@@ -2387,10 +2412,13 @@ button:hover {
 @media (max-width: 768px) {
     .vdo-Container {
         flex-wrap: wrap;
+        flex-direction: column;
+        min-height: auto;
     }
 
     .vdo-holder {
-        width: 100%;
+        width: 90%;
+        padding: 30px 20px;
     }
 
     .Text-component {
@@ -2398,6 +2426,7 @@ button:hover {
         padding: 30px 15px;
         margin-top: 0px;
     }
+
 
     .Vdo-content {
         padding: 0px;
@@ -2411,7 +2440,11 @@ button:hover {
         font-size: 17px;
     }
 
-    .Vdo-componen {
+    .Vdo-component {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .testimonial-cards .card{
+        max-width: 270px;
     }
 }
