@@ -1,23 +1,19 @@
 {
   "files": {
     "main.css": "/frontEd/static/css/main.3e95c740.css",
-    "main.js": "/frontEd/static/js/main.09e6d4d3.js",
+    "main.js": "/frontEd/static/js/main.01848133.js",
     "static/js/453.c0d0c82e.chunk.js": "/frontEd/static/js/453.c0d0c82e.chunk.js",
-    "static/media/video1.mp4": "/frontEd/static/media/video1.0ae4d80318f88542e1fb.mp4",
-    "static/media/video3.mp4": "/frontEd/static/media/video3.0b7c9d96ecddc62ff10d.mp4",
-    "static/media/video2.mp4": "/frontEd/static/media/video2.c119749d97d89e80bb93.mp4",
     "static/media/restaurant3.jpg": "/frontEd/static/media/restaurant3.f7f55a506884b8a41890.jpg",
-    "static/media/video4.mp4": "/frontEd/static/media/video4.d630e0c68f8dd4a51fd7.mp4",
     "static/media/restaurant.jpg": "/frontEd/static/media/restaurant.952b617661c6172eded7.jpg",
     "static/media/restaurant2.jpg": "/frontEd/static/media/restaurant2.19cd9d976741b57e977e.jpg",
     "static/media/Inkitchen.jpg": "/frontEd/static/media/Inkitchen.30aa8965be224181b154.jpg",
     "index.html": "/frontEd/index.html",
     "main.3e95c740.css.map": "/frontEd/static/css/main.3e95c740.css.map",
-    "main.09e6d4d3.js.map": "/frontEd/static/js/main.09e6d4d3.js.map",
+    "main.01848133.js.map": "/frontEd/static/js/main.01848133.js.map",
     "453.c0d0c82e.chunk.js.map": "/frontEd/static/js/453.c0d0c82e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e95c740.css",
-    "static/js/main.09e6d4d3.js"
+    "static/js/main.01848133.js"
   ]
 }
