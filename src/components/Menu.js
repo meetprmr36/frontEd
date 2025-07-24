@@ -3,7 +3,7 @@ import MenuComponent from './MenuComponent'
 
 const Menu = () => {
     return (
-        <div id='Menu' className='Menu'>
+        <div id='Menu-Card' className='Menu'>
             <div className='Menu-content'>
                 <span className='Top-img'>
                     <img className=' Menu-img' src="https://demoxml.com/html/restaurant/assets/images/menu-card1.png" alt="Menu Card" />

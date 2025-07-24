@@ -1,11 +1,34 @@
 import React from 'react'
 import Bottom from './Bottom'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion'
 
 const EndingComponent = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const handleMenu = () => {
-        navigate('/', { state: { scrollTo: 'Menu' } })
+        if (location.pathname === '/') {
+            // Already on homepage, just scroll
+            const element = document.getElementById('Menu-Card');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Navigate to homepage with scroll instruction
+            navigate('/', { state: { scrollTo: 'Menu-Card' } });
+        }
+    }
+    const handleEvent = () => {
+        if (location.pathname === '/') {
+            // Already on homepage, just scroll
+            const element = document.getElementById('LatestEvent');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Navigate to homepage with scroll instruction
+            navigate('/', { state: { scrollTo: 'LatestEvent' } });
+        }
     }
 
     return (
@@ -30,17 +53,32 @@ const EndingComponent = () => {
                                 <i className="fa fa-pinterest"></i>
                             </a>
                         </div>
-                        <div className='Second-content'>
-                            <h2 className='fotter-heading'>Quick Links</h2>
-                            <div className='Line'></div>
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href='/' onClick={handleMenu}>Menu</a></li>
-                                <li><a href="/About">About</a></li>
-                                <li>Blog</li>
-                                <li>Contact</li>
-                            </ul>
-                        </div>
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                initial={{ opacity: 0, y: 40 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -40 }}
+                                transition={{ duration: 0.5 }}
+                                className='Second-content'>
+                                <h2 className='fotter-heading'>Quick Links</h2>
+                                <div className='Line'></div>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li>
+                                        <a href="/" onClick={e => { e.preventDefault(); handleMenu(); }}>
+                                            Menu
+                                        </a></li>
+                                    <li><Link to="/About">About</Link></li>
+                                    <li>
+                                        <a href="/" onClick={f => { f.preventDefault(); handleEvent(); }}>
+                                            Latest Event
+                                        </a></li>
+                                    <li>
+                                        <Link to="/Account">Account</Link>
+                                    </li>
+                                </ul>
+                            </motion.div>
+                        </AnimatePresence>
                         <div className='THIRD-content'>
                             <h2 className='fotter-heading'>WORKING TIME</h2>
                             <div className='Line'></div>
@@ -86,7 +124,7 @@ const EndingComponent = () => {
                 </div>
             </div>
             <Bottom />
-        </div>
+        </div >
     )
 }
 export default EndingComponent
