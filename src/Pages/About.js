@@ -149,7 +149,13 @@ const About = () => {
 
       <section className="cta-section section-padding bounce-in">
         <h2>Ready to Taste Something Amazing?</h2>
-        <button onClick={handleClick} className="cta-button">Book a Table</button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+          onClick={handleClick}
+          className="cta-button">
+          Book a Table
+        </motion.button>
       </section>
     </div>
 
