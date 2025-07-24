@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontEd/static/css/main.1619e5e4.css",
-    "main.js": "/frontEd/static/js/main.dff581f0.js",
+    "main.css": "/frontEd/static/css/main.7be2ebea.css",
+    "main.js": "/frontEd/static/js/main.37a94017.js",
     "static/js/453.c0d0c82e.chunk.js": "/frontEd/static/js/453.c0d0c82e.chunk.js",
     "static/media/video1.mp4": "/frontEd/static/media/video1.0ae4d80318f88542e1fb.mp4",
     "static/media/video3.mp4": "/frontEd/static/media/video3.0b7c9d96ecddc62ff10d.mp4",
@@ -12,12 +12,12 @@
     "static/media/restaurant2.jpg": "/frontEd/static/media/restaurant2.19cd9d976741b57e977e.jpg",
     "static/media/Inkitchen.jpg": "/frontEd/static/media/Inkitchen.30aa8965be224181b154.jpg",
     "index.html": "/frontEd/index.html",
-    "main.1619e5e4.css.map": "/frontEd/static/css/main.1619e5e4.css.map",
-    "main.dff581f0.js.map": "/frontEd/static/js/main.dff581f0.js.map",
+    "main.7be2ebea.css.map": "/frontEd/static/css/main.7be2ebea.css.map",
+    "main.37a94017.js.map": "/frontEd/static/js/main.37a94017.js.map",
     "453.c0d0c82e.chunk.js.map": "/frontEd/static/js/453.c0d0c82e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1619e5e4.css",
-    "static/js/main.dff581f0.js"
+    "static/css/main.7be2ebea.css",
+    "static/js/main.37a94017.js"
   ]
 }
